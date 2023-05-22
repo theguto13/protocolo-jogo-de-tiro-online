@@ -3,7 +3,7 @@ import pickle
 import threading
 
 # Configurações do servidor
-HOST = 'localhost'
+HOST = 'localhost' # ATENÇÃO !!!!!!!!!!!! Insira aqui, entre aspas, o IP do computador que irá hostear o jogo.
 PORT = 1313
 
 # Dimensões da tela
