@@ -1,6 +1,7 @@
 import socket
 import pickle
 import pygame
+import random
 import sys
 
 # Configurações do cliente
