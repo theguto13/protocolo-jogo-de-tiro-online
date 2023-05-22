@@ -4,7 +4,7 @@ import threading
 
 # Configurações do servidor
 HOST = 'localhost'
-PORT = 8000
+PORT = 1313
 
 # Dimensões da tela
 SCREEN_WIDTH = 1024
@@ -16,8 +16,8 @@ PLAYER_SPEED = 5
 SHOOT_COOLDOWN = 30  # Tempo de recarga da arma (em frames)
 
 # Configurações do tiro
-SHOT_SPEED = 5
-SHOT_RADIUS = 5
+SHOT_SPEED = 8
+SHOT_RADIUS = 6
 
 # Inicialização do servidor
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
