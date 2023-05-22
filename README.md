@@ -7,4 +7,4 @@ Para o protocolo funcionar corretamente, você deve ter instalado em seu Python 
 pip install pygame
 ```
 
-Após efetuar a instalação do pygame, você deve ter baixado em seu computador os arquivos do projeto (server.py e client.py). Para jogar com outro computador, desde que ele esteja na mesma rede que você, basta colocar o IP dele no campo HOST do cliente.py.
+Após efetuar a instalação do pygame, você deve ter baixado em seu computador o arquivo client.py e ao menos um computador precisa ter o server.py. Esse computador irá ser o servidor do jogo online. Para jogar com outro computador, desde que ele esteja na mesma rede que você, basta colocar o IP dele no campo HOST do cliente.py e executá-lo, usando Python3.
