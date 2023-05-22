@@ -5,7 +5,7 @@ import sys
 
 # Configurações do cliente
 HOST = 'localhost'
-PORT = 8000
+PORT = 1313
 
 # Dimensões da tela
 SCREEN_WIDTH = 1024
@@ -13,10 +13,13 @@ SCREEN_HEIGHT = 768
 
 # Configurações do jogador
 PLAYER_RADIUS = 10
+colorR = random.randint(0, 255)
+colorG = random.randint(0, 255)
+colorB = random.randint(0, 255)
 
 # Configurações do tiro
-SHOT_RADIUS = 5
-SHOT_SPEED = 5
+SHOT_RADIUS = 6
+SHOT_SPEED = 8
 
 # Lista para armazenar os jogadores eliminados
 eliminated_players = []
@@ -115,13 +118,11 @@ while running:
     if len(players) > 0:  # Verifica se há jogadores na lista
         # Desenha os jogadores
         for player_x, player_y in players.values():
-            pygame.draw.circle(screen, (255, 0, 0), (player_x, player_y), PLAYER_RADIUS)
+            pygame.draw.circle(screen, (colorR, colorG, colorB), (player_x, player_y), PLAYER_RADIUS)
 
     # Desenha os tiros
     for shot_x, shot_y in received_shots:
         pygame.draw.circle(screen, (0, 255, 0), (int(shot_x), int(shot_y)), SHOT_RADIUS)
-
-    pygame.display.flip()
 
     pygame.display.flip()
     clock.tick(60)
